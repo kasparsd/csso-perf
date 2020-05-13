@@ -10,7 +10,7 @@ const dummyOptimize = (css) => {
   return css
     .replace(/[\n\r\t]/gi, ' ') // Line breaks to spaces.
     .replace(/\s+/gi, ' ') // Multiple spaces to single spaces.
-    .replace(/(\s+?)?([\(\):;}{>+])(\s+?)?/ig, '$2') // Remove spaces before and after :;{}()>+
+    .replace(/(\s+?)?([\(\):;}{>])(\s+?)?/ig, '$2') // Remove spaces before and after :;{}()>
 }
 
 console.log(`Dummifying ${sourceCss.length} bytes of CSS ${runTimes} times.`)
