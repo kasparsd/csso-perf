@@ -5,6 +5,7 @@ const runTimes = process.argv[2] || 100
 const sourceCss = fs.readFileSync(path.join(__dirname, 'original.css'), 'utf8')
 const timeStart = Date.now()
 
+// Not verified to produce valid CSS!
 const dummyOptimize = (css) => {
   return css
     .replace(/[\n\r\t]/gi, ' ') // Line breaks to spaces.
