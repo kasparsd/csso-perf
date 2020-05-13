@@ -15,3 +15,5 @@ for (let step = 0; step < runTimes; step++) {
 const timeUsed = Date.now() - timeStart
 
 console.log(`Minified ${sourceCss.length} bytes of CSS ${runTimes} times to ${minifiedCss.length} bytes (-${Math.round((1 - minifiedCss.length/sourceCss.length)*100)}%) in ${timeUsed}ms or ${timeUsed/runTimes}ms per run.`)
+
+fs.writeFileSync(path.join(__dirname, 'original.minify.css'), minifiedCss)
