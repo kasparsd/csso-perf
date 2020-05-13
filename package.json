@@ -1,0 +1,14 @@
+{
+  "name": "css-experiment",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csso": "^4.0.3"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}
