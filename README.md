@@ -11,11 +11,12 @@ where `100` is the number of times to run the optimizer.
 Using `csso`:
 
     $ node minify.js
-    Minifiying 61405 bytes of CSS 100 times.
-    Minified 61405 bytes of CSS 100 times to 43728 bytes (-29%) in 3556ms or 35.56ms per run.
+    Minifiying 198313 bytes of CSS 100 times.
+    Minified 198313 bytes of CSS 100 times to 158457 bytes (-20%) in 10857ms or 108.57ms per run.
 
 Using a simple string replace logic in `dummify.js`:
 
     $ node dummify.js
-    Dummifying 61405 bytes of CSS 100 times.
-    Dummified 61405 bytes of CSS 100 times to 46627 bytes (-24%) in 255ms or 2.55ms per run
+    node dummify.js    
+    Dummifying 198313 bytes of CSS 100 times.
+    Dummified 198313 bytes of CSS 100 times to 165976 bytes (-16%) in 587ms or 5.87ms per run.

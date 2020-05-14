@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const runTimes = process.argv[2] || 100
-const sourceCss = fs.readFileSync(path.join(__dirname, 'original.css'), 'utf8')
+const sourceCss = fs.readFileSync(path.join(__dirname, 'bootstrap.css'), 'utf8')
 const timeStart = Date.now()
 
 // Not verified to produce valid CSS!
@@ -23,4 +23,4 @@ const timeUsed = Date.now() - timeStart
 
 console.log(`Dummified ${sourceCss.length} bytes of CSS ${runTimes} times to ${minifiedCss.length} bytes (-${Math.round((1 - minifiedCss.length/sourceCss.length)*100)}%) in ${timeUsed}ms or ${timeUsed/runTimes}ms per run.`)
 
-fs.writeFileSync(path.join(__dirname, 'original.dummify.css'), minifiedCss)
+fs.writeFileSync(path.join(__dirname, 'bootstrap.dummify.css'), minifiedCss)
